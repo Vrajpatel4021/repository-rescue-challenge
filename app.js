@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send(`DevOps assessment app is running on port ${PORT}`);
 });
 
+app.get('/test-db',(req,res) => {
+  res.send("DB Connection Successful");
+})
+
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
